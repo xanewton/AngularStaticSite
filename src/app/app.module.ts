@@ -11,7 +11,7 @@ import { UsersComponent } from './users/users.component';
     UsersComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule
   ],
   providers: [],

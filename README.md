@@ -21,6 +21,7 @@ References
 - [Getting Started with Angular: Your First App](https://angular.io/start#getting-started-with-angular-your-first-app)
 - [Using Angular in Visual Studio Code](https://code.visualstudio.com/docs/nodejs/angular-tutorial)
 - [Creating Static Site With Angular](https://www.baljeetsingh.in/blog/creating-a-static-site-with-angular/)
+- [Angular Prerender](https://www.npmjs.com/package/angular-prerender)
 
 
 
