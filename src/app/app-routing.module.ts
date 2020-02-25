@@ -4,7 +4,8 @@ import { UsersComponent } from './users/users.component';
 
 
 const routes: Routes = [
-  {path: 'users', component: UsersComponent}
+  {path: 'users', component: UsersComponent},
+  { path: 'todos', loadChildren: () => import('./todos/todos.module').then(m => m.TodosModule) }
 ];
 
 @NgModule({
