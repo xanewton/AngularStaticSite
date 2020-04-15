@@ -21,6 +21,7 @@ References
 - [Getting Started with Angular: Your First App](https://angular.io/start#getting-started-with-angular-your-first-app)
 - [Using Angular in Visual Studio Code](https://code.visualstudio.com/docs/nodejs/angular-tutorial)
 - [Creating Static Site With Angular](https://www.baljeetsingh.in/blog/creating-a-static-site-with-angular/)
+- [Angular Universal: a Complete Practical Guide](https://blog.angular-university.io/angular-universal/)
 - [Angular Prerender](https://www.npmjs.com/package/angular-prerender)
 
 
@@ -32,7 +33,7 @@ Steps
 2. Create a new Angular CLI workspace using the ng new command.
 ```
 
-xengars-MacBook-Pro-2:Angular xengar$ ng new AngularStaticSite
+newtons-MacBook-Pro-2:Angular newtan$ ng new AngularStaticSite
 ? Would you like to add Angular routing? Yes
 ? Which stylesheet format would you like to use? SCSS   [ https://sass-lang.com/documentation/syntax#scss                ]
 . . . 
@@ -41,6 +42,19 @@ xengars-MacBook-Pro-2:Angular xengar$ ng new AngularStaticSite
 ```
 
 3. Download code and follow guide on [Creating Static Site With Angular](https://www.baljeetsingh.in/blog/creating-a-static-site-with-angular/).
+
+  NOTES:
+  - First, an Angular Single Page application with 3 html pages is created.
+  - Next, the way the project creates a crawlable application is by using Angular Universal. See [Angular Universal: a Complete Practical Guide](https://blog.angular-university.io/angular-universal/)
+  - Step-1 is to add Universal rendering with the Angular CLI
+    ``` 
+    ng generate universal --client-project <name of your client project>
+    ```
+  - Step-2 is to execute the rendering after the build creation
+    ```
+    ng run your-project-name:server  <-- Generate the Universal bundle a bundle.js in the dist-server folder
+    npx angular-prerender
+    ```
 
 4.  To run the application, go to the workspace folder (my-app). Launch the server by using the CLI command:
 ```
@@ -92,13 +106,13 @@ Angular Installation
     Make sure that /usr/local/bin is in your $PATH.
   ```    
   ```
-xengars-MacBook-Pro-2:~ xengar$ echo $PATH
-/Users/xengar/Library/Android/sdk/platform-tools/:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:/opt/X11/bin:/Applications/Xamarin Workbooks.app/Contents/SharedSupport/path-bin
+newtons-MacBook-Pro-2:~ newtan$ echo $PATH
+/Users/newtan/Library/Android/sdk/platform-tools/:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:/opt/X11/bin:/Applications/Xamarin Workbooks.app/Contents/SharedSupport/path-bin
   ```
 
 2.8 Enter node - v in the Terminal to verify that Node.js is installed correctly and to see the version of Node.js that was installed.
   ```
-xengars-MacBook-Pro-2:~ xengar$ node -v
+newtons-MacBook-Pro-2:~ newtan$ node -v
 v12.16.1
   ```
 
@@ -106,7 +120,7 @@ v12.16.1
    This setup guide uses the npm client command line interface, which is installed with Node.js by default.
   
   ```
-xengars-MacBook-Pro-2:~ xengar$ npm -v
+newtons-MacBook-Pro-2:~ newtan$ npm -v
 6.13.4
   ```
 
@@ -114,7 +128,7 @@ xengars-MacBook-Pro-2:~ xengar$ npm -v
    https://angular.io/guide/setup-local#step-1-install-the-angular-cli 
  
   ``` 
-xengars-MacBook-Pro-2:~ xengar$ sudo npm install -g @angular/cli
+newtons-MacBook-Pro-2:~ newtan$ sudo npm install -g @angular/cli
 Password:
 npm WARN deprecated request@2.88.2: request has been deprecated, see https://github.com/request/request/issues/3142
 /usr/local/bin/ng -> /usr/local/lib/node_modules/@angular/cli/bin/ng
@@ -127,7 +141,7 @@ Google’s Privacy Policy at https://policies.google.com/privacy? For more detai
 how to change this setting, see http://angular.io/analytics. No
 + @angular/cli@9.0.2
 added 260 packages from 205 contributors in 27.898s
-xengars-MacBook-Pro-2:~ xengar$ 
+newtons-MacBook-Pro-2:~ newtan$ 
   ```
 
 
@@ -149,7 +163,7 @@ Requirements:
  - Node.js with npm 
  - Angular CLI
  - A directory for Angular projects
-   /Users/xengar/Angular
+   /Users/newtan/Angular
 
 See guide at https://code.visualstudio.com/docs/nodejs/angular-tutorial
 
